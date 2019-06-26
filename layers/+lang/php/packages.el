@@ -18,7 +18,6 @@
         ggtags
         helm-gtags
         php-auto-yasnippets
-        (php-extras :location (recipe :fetcher github :repo "arnested/php-extras"))
         php-mode
         phpcbf
         phpunit
@@ -45,10 +44,6 @@
 
 (defun php/init-php-auto-yasnippets ()
   (use-package php-auto-yasnippets
-    :defer t))
-
-(defun php/init-php-extras ()
-  (use-package php-extras
     :defer t))
 
 (defun php/init-php-mode ()
